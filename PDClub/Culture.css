@@ -1,0 +1,103 @@
+*{
+    padding:0%;
+    margin:0%;
+    font-family: Poppins;
+}
+
+.xxxx{
+    margin-top: -430px;
+    margin-bottom: 273px;
+    color: rgb(255, 255, 255);
+}
+
+#ONE{
+text-align:center;
+font-size: 100px;
+font-weight: 700;
+}
+
+#TWO{
+    text-align:center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top:15px ;
+    }
+
+.First{
+background-color: #da6f3654;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.culturediv{
+    width:900px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    border-radius: 30px 30px 30px 30px;
+    color: white;  
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cultureimg{
+    width:50%;
+    display:inline-block;
+}
+.cultureinfo{
+    width: 50%;
+    display:inline-block;
+    border-radius: 0px 30px 30px 0px;
+   color: rgb(0, 0, 0);
+    background-color:#9a9ef0;
+    padding-top: 30px;
+}
+.Cultureheading{
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.culturedetails{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.details{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+.firstdetail{
+    background-color: aliceblue;
+    width: 33%;
+    margin-right: 30px;
+    height: 500px;
+    border-radius: 30px 30px 30px 0px;
+    background-color: #9a9ef0;
+    ;
+}
+
+.seconddetail{
+    width: 33%;
+    margin-left: 30px;
+    height: 500px;
+    border-radius: 30px 30px 30px 0px;
+    background-color: #9a9ef0;
+}
+
+.headingdetail{
+    text-align: center;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    color: black;
+
+}

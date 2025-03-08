@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  \
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="PDClub_Two.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" style="margin-top: -4dvh">
+      <ul class="navbar-menu">
+        <li class="menu-item">
+          <a href="PDClub_Two.html"
+            ><i class="fa-solid fa-home" style="padding-right: 8px"></i
+            >Home</a
+          >
+        <li class="menu-item">
+          <a href="#"
+            ><i class="fa-solid fa-caret-down" style="padding-right: 8px"></i
+            >Our Events</a
+          >
+          <ul class="dropdown">
+            <li><a href="#">Sankalpa Camp</a></li>
+            <li><a href="#">Parivartan Camp</a></li>
+            <li><a href="#">Mentor Meet</a></li>
+            <li><a href="#">Career Guidance</a></li>
+          </ul>
+        </li>
+        <li class="menu-item" id="XX">
+          <a href="Glimpses.html"
+            ><i class="fa-solid fa-film" style="padding-right: 8px"></i>Glimpses
+          </a>
+        </li>
+        <li class="menu-item" id="XY">
+          <a
+            href="C:\Users\Aayush\OneDrive\Desktop\WebDev\JAVASCRIPT\LoginPage.html"
+            ><i class="fa-solid fa-circle-user" style="padding-right: 8px"></i
+            >Become Volunteer</a
+          >
+        </li>
+        <li class="menu-item" id="XY">
+          <a
+            href="C:\Users\Aayush\OneDrive\Desktop\WebDev\JAVASCRIPT\SuccessStories.html"
+            ><i class="fa-solid fa-square-check" style="padding-right: 8px"></i
+            >Sucess Stories</a
+          >
+        </li>
+        <li class="menu-item" id="XY">
+          <a href="C:\Users\Aayush\OneDrive\Desktop\WebDev\JAVASCRIPT\Form.html"
+            ><i class="fa-solid fa-square-check" style="padding-right: 8px"></i
+            >Feedback</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- MultiStep Form -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active">Personal Details</li>
+            <li>Social Profiles</li>
+            <li>Account Setup</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">Tell us something more about you</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <input
+              type="button"
+              name="next"
+              class="next action-button"
+              value="Next"
+            />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Academic Info</h2>
+            <h3 class="fs-subtitle">Your academic information</h3>
+            <input type="text" name="Branch" placeholder="Branch" />
+            <input type="text" name="CGPA" placeholder="Class and Division" />
+            <input type="text" name="gplus" placeholder="First Year CGPA " />
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button-previous"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="next action-button"
+              value="Next"
+            />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Slot Booking</h2>
+            <h3 class="fs-subtitle">Enter Appropriate Time Slot</h3>
+            <input type="text" name="Branch" placeholder="Total Hours" />
+            <input type="text" name="CGPA" placeholder="Enter Time" />
+            <input type="text" name="gplus" placeholder="Exit Time" />
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button-previous"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="next action-button"
+              value="Next"
+            />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">Fill in your credentials</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input
+              type="password"
+              name="cpass"
+              placeholder="Confirm Password"
+            />
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button-previous"
+              value="Previous"
+            />
+            <input
+              type="submit"
+              name="submit"
+              class="submit action-button"
+              value="Submit"
+            />
+          </fieldset>
+        </form>
+        <!-- link to designify.me code snippets -->
+        <!-- /.link to designify.me code snippets -->
+      </div>
+    </div>
+    <!-- /.MultiStep Form -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var current_fs, next_fs, previous_fs;
+        var animating = false;
+    
+        $(".next").click(function() {
+            if (animating) return false;
+            animating = true;
+    
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+    
+            // ✅ Ensure progress bar updates correctly
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+    
+            // ✅ Make next fieldset visible before animation starts
+            next_fs.css('display', 'block');
+    
+            // ✅ Smooth transition
+            current_fs.animate({ opacity: 0 }, {
+                step: function(now) {
+                    var scale = 1 - (1 - now) * 0.2;
+                    var left = (now * 50) + "%";
+                    var opacity = 1 - now;
+                    current_fs.css({ 'transform': 'scale(' + scale + ')', 'position': 'absolute' });
+                    next_fs.css({ 'left': left, 'opacity': opacity });
+                },
+                duration: 500, // ✅ Reduced duration for smoother animation
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                }
+            });
+        });
+    
+        $(".previous").click(function() {
+            if (animating) return false;
+            animating = true;
+    
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+    
+            // ✅ Remove active class from progress bar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+    
+            // ✅ Ensure previous fieldset is visible before animation
+            previous_fs.css('display', 'block');
+    
+            current_fs.animate({ opacity: 0 }, {
+                step: function(now) {
+                    var scale = 0.8 + (1 - now) * 0.2;
+                    var left = ((1 - now) * 50) + "%";
+                    var opacity = 1 - now;
+                    current_fs.css({ 'left': left });
+                    previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+                },
+                duration: 500,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                }
+            });
+        });
+    
+        $(".submit").click(function() {
+            alert("Form Submitted!");
+            return false;
+        });
+    });
+    </script>
+    
+  </body>
+</html>
