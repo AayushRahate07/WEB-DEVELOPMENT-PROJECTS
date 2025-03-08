@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar1{
+    height: 60px;
+background-color: #131921;
+display: flex;
+align-items: center;
+}
+
+#LOGO{ 
+    height: 52px;
+    width: 130px;
+    border: 2px solid transparent;   
+    padding-left: 3px;
+}
+
+
+.location{
+    display: flex;
+    border: 2px solid transparent;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.locationicon{
+color: white;
+font-size: 23px;
+width: 35px;
+padding-top: 20px;
+text-align: right;
+}
+.null{
+    height: 12px;
+}
+.smalladdr{
+font-size: 12px;
+color: white;
+text-align: left;
+height: 15px;
+width: 142px;
+padding-left: 5px ;
+color: rgb(198, 198, 198);
+}
+.bigaddr{
+font-size: 16px;
+color: white;
+height: 33px;
+width: 142px;
+padding-left: 5px ;
+font-weight: bold;
+}
+.navsearch{
+    display: flex;
+    width: 560px;
+    height: 40px;
+    background-color: #f3f3f3;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-right: 12px
+}
+.navsearch:hover{
+    border: 3px solid #ffa228;
+}
+
+.searchselect{
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   border: none;
+   background-color: #f3f3f3;
+   width: 50px;
+   text-align: center;
+   margin-right: 5px;
+}
+.input{
+    border: none;
+    background-color: #f3f3f3;
+    width: 100%;
+    text-align: left;
+    padding-left: 12px;
+    border-left: 1px solid black;
+    font-size: 17px;
+}
+.searchicon{
+    background-color: #febd69;
+    width: 48px;
+    height: 40px;
+    text-align: center;
+    border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+}
+
+
+.signindiv{
+    color: white;
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.signin{
+    font-size: 11px;
+}
+.accounts{
+    font-size: 14px;
+    font-weight: bold;
+}
+.carttext{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: -12px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+
+.panel{
+    height: 39px;
+    background-color: #232f3e;
+    display: flex;
+}
+
+
+.menu{
+    color: white;
+    text-align: left; padding-top: 10px; padding-left: 10px;
+}
+.categories{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    width: 800px;
+}
+
+.all{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.all:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.MX{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.MX:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.Best{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.Best:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.Electro{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.Electro:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.Homeandkitchen{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.Homeandkitchen:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.customer{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.customer:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.fashion{
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.fashion:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+
+.deals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 260px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.deals:hover{
+    border: 1px solid white;
+}
+
+.herosection{
+    height: 350px;
+    background-image: url(AmazonBG.jpg);
+    background-size: cover;
+}
+.heromessage{
+    font-size: 14px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 330px;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+.shoppingsection{
+    background-image: linear-gradient(180deg,#d82c8c,rgb(218, 218, 218));
+    height: 430px;
+    display: flex;
+   padding-top: 30px;
+   justify-content: space-evenly;
+   padding-top: 50px;
+}
+.shoppingsection2{
+   background-color: rgb(218, 218, 218);
+    height: 430px;
+    display: flex;
+   padding-top: 30px;
+   justify-content: space-evenly;
+}
+
+.box1{
+    height: 400px;
+    width: 22%;
+    background-color: white;
+}
+.box2{
+    height: 400px;
+    width: 22%;
+    background-color: white;
+}
+.box3{
+    height: 400px;
+    width: 22%;
+    background-color: white;
+}
+.box4{
+    height: 400px;
+    width: 22%;
+    background-color: white;
+}
+.textt{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+.linkss{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #007185;
+}
+.linkss:hover{
+    color: #ff824c;
+    cursor: pointer;
+}
+
+.griddd{
+    display: flex;
+    margin-left: 29px;
+    margin-bottom: 85px;
+}
+.section1{
+
+    width: 110px;
+    height: 110px;
+}
+.section2{
+
+    width: 110px;
+    height: 110px;
+}
+.section3{
+ 
+    width: 110px;
+    height: 110px;
+}
+.section4{
+
+    width: 110px;
+    height: 110px;
+}
