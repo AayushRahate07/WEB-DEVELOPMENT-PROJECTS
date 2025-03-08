@@ -1,0 +1,11 @@
+.mapcover{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #000e2b;
+
+}
+#map{
+    width: 95dvh;
+}
