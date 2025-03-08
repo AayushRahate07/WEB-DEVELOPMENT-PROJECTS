@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header {
+    width: 100%;
+    height: 100dvh;
+    background-image: url("Loktak\ Lake.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+  .zonename {
+    font-family: Samarkan;
+    font-size: 20dvh;
+    padding-top: 3%;
+    text-align: center;
+  }
+  
+  .featuring{
+    font-family: Samarkan;
+    text-align: center;
+    font-size: 5dvh;
+  }
+
+  .statescover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("BGne.jpg");
+  background-size: 100% 100%;
+  height: 100dvh;
+  }
+  
+  .states {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 60%;
+    gap:5%;
+    padding-top:0.5%;
+  }
+  
+  .Tamil {
+    display: flex;
+    background-image: url("north-east.jpg");
+    border-radius: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+  
+  }
+  .Sikkim {
+    display: flex;
+    background-image: url("Sikkim.jpg");
+    border-radius: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+  
+  }
+  .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(43, 19, 0, 0.781);
+      font-family: samarkan;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-size: 6dvh;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
