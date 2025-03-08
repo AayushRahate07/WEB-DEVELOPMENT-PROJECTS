@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Stories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carme&family=Geologica:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+       body {
+            font-family: geologica;
+            background-image: url(LoginPageBG.png);
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+       .second {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        border-radius: 8px;
+        padding-left: 2%;
+        padding-right: 2%;
+        }
+        
+      .First {
+        display: flex;
+        margin: auto;
+        width: 600px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.769);
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      #Heading {
+        text-align: center;
+        margin-top: 0.1%;
+      }
+
+      button {
+        background-color: rgb(227, 98, 0);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: geologica;
+        margin-top: 1%;
+        margin-left: 33%;
+      }
+      button#SubmitCredentials{
+        margin-left: 1%;
+        margin-top: 5%;
+      }
+      button#SubmitCredentialsTwo{
+        margin-left: 39%;
+      }
+      button:hover {
+        background-color: rgb(174, 61, 0);
+      }
+      .story-tab {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        padding-left: 23px;
+        padding-top: 18px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="First">
+      <div id="storiesPage">
+        <h2 id="Heading">Previous Success Stories <i class="fa-solid fa-thumbs-up"></i></h2>
+        <div id="storiesList">
+          <div class="story-tab">
+            <strong id="StoryTeller">Aradhana Dasa:</strong>
+            <p>
+              The workshops, interactive events, and motivational sessions 
+              have not only enhanced my communication skills and helped me discover my strengths. 
+              Your dedication to fostering personal and professional
+              development among students is truly commendable.
+              Thank you for creating such a supportive and enriching 
+              environment.
+            </p>
+          </div>
+          <div class="story-tab">
+            <strong id="StoryTeller">Rohit Agrawal:</strong>
+            <p>
+              I hope this message finds you well. I am writing to express my heartfelt gratitude to the Personality Development
+               Club for its tremendous efforts in organizing activities and sessions 
+               that have significantly impacted my growth. Hard work and dedication helped me reach where I am today. Never
+              give up!
+            </p>
+          </div>
+        </div>
+        <button onclick="redirectToLogin()">Login to Share Your Story</button>
+      </div>
+
+    <div class="second" id="loginPage" style="display: none;">
+      <h2 style="text-align: center; margin-top: 1%;"> Login <i class="fa-solid fa-circle-user"></i></h2>
+      <div class="credentials" style="text-align: center; margin-bottom: 2%;">
+      <form id="loginForm" onsubmit="validateLogin(event)">
+
+        <div class="form-group">
+          <label for="email" style="text-align: left;"><i class="fa-solid fa-envelope"></i> Email</label>
+          <input type="email" id="email" placeholder="Enter your email" style="font-family: geologica;">
+        </div>
+        <br>
+        <div class="form-group" style="text-align: left;">
+          <label for="password"><i class="fa-solid fa-puzzle-piece"></i> Password</label>
+          <input type="password" id="password" placeholder="Enter your Password" style="font-family: geologica">
+        </div>
+
+          <button type="submit" id="SubmitCredentials">Submit Your Credentials </button>
+      </form>
+  </div>
+</div>
+    <div class="second" id="storyFormPage" style="display: none;">
+      <h2 style="text-align: center">Share Your Success Story</h2>
+      <form id="storyForm" onsubmit="submitStory(event)">
+
+        <div class="form-group">
+          <label for="name" style="text-align: left;"> Name </label>
+          <input type="text" id="name" placeholder="Enter your Name" style="font-family: geologica;">
+        </div>
+<br>
+
+
+<div class="form-group">
+  <label for="interest">Choose your branch </label>
+  <select id="interest" style="font-family: geologica;">
+    <option value="">Select Branch</option>
+    <option value="event_management">Computer Engineering</option>
+    <option value="marketing">AIDS</option>
+    <option value="technical_support">Information Technology</option>
+    <option value="social_media">Mechanical Engineering</option>
+    <option value="social_media">Electrical Engineering</option>
+    <option value="social_media">Civil Engineering</option>
+  </select>
+</div>
+<br> 
+
+        <div class="form-group">
+          <label for="story">Your Experience <i class="fa-solid fa-arrow-down"></i></label>
+          <textarea
+            id="story"
+            placeholder="Write your success story here"
+            style="font-family: geologica; padding-top: 1%; padding-left: 1.5%; margin-bottom: 2%; min-height: 80px;"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="SubmitCredentialsTwo">Submit Story</button>
+      </form>
+    </div>
+
+    <script>
+      function redirectToLogin() {
+        document.getElementById("storiesPage").style.display = "none";
+        document.getElementById("loginPage").style.display = "block";
+      }
+
+      function validateLogin(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        if (email === "aayushrahate@gmail.com" && password === "admin") {
+          document.getElementById("loginPage").style.display = "none";
+          document.getElementById("storyFormPage").style.display = "block";
+        } else {
+          alert("Invalid email or password! \nTry contacting admin for access at pdc@vit.edu");
+        }
+      }
+
+      function submitStory(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const story = document.getElementById("story").value;
+
+        const newStoryTab = document.createElement("div");
+        newStoryTab.className = "story-tab";
+        newStoryTab.innerHTML = `<strong>${name}:</strong><p>${story}</p>`;
+
+        document.getElementById("storiesList").appendChild(newStoryTab);
+
+        alert("Your Story has been sucessfully Emailed!");
+        document.getElementById("storyForm").reset();
+
+        document.getElementById("storyFormPage").style.display = "none";
+        document.getElementById("storiesPage").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
